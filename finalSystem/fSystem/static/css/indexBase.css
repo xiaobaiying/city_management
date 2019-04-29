@@ -1,0 +1,239 @@
+*{
+	cursor:default;
+}
+html body {
+	height: 100%;
+}
+.table-css{
+    border:2px solid #31b0d5;
+	border-collapse:collapse;
+	border-spacing: 10px 20px;
+    width:90%;
+    margin:auto;
+
+    cellspacing:0px ;
+    cellpadding:0px;
+	text-align:center;
+	vertical-align: middle;
+}
+.table-css td{
+	 border:1px dashed #bce8f1;
+	 width:50%;
+     font-size:16pt
+
+}
+.table-css tr{
+	height: 39px;
+}
+.table-css3{
+    border:1px solid #31b0d5;
+	border-collapse:collapse;
+	border-spacing: 10px 20px;
+    width: 80%;
+	margin-top: 10px;
+	margin-left:100px;
+	margin-right:200px;
+    cellspacing:0px ;
+    cellpadding:0px;
+	text-align:left;
+	vertical-align: middle;
+}
+.table-css3 td{
+	 border:1px dashed #bce8f1;
+	 width:33%;
+
+}
+.table-css3 tr{
+	height: 39px;
+}
+.tittle-font{
+	font-family: 楷体;
+	font-size:28px;
+
+}
+.ordinary-font{
+    line-height: 30px;
+}
+.wait-span{
+    color:red;
+}
+
+
+.inner-img {
+	float:left;
+	height:50px;
+}
+
+.loading {
+	position:absolute;
+	top:40%;
+	right:50%;	
+}
+
+#saleContent .col-sm-10,.col-sm-7,.col-sm-9{
+    padding-left: 0;
+}
+
+.errorShow {
+    display:block;
+}
+
+.errorHide {
+    display:none;
+}
+
+/*首页top样式*/
+.navbar-inner {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    height: 60px;
+}
+#TabMain {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.tabItemContainer {
+    width: 100px;
+    height: 500px;
+    float: left;
+}
+.tabBodyContainer {
+
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
+    border-radius: 0 5px 5px 0;
+    margin-left: 1px;
+}
+.tabItemContainer>li {
+    list-style: none;
+    text-align: center;
+}
+.tabItemContainer>li>a {
+    float: left;
+    width: 100%;
+    padding: 30px 0 30px 0;
+    font: 20px "微软雅黑", Arial, Helvetica, sans-serif;
+    color: #808080;
+    cursor: pointer;
+    text-decoration: none;
+    border:1px solid transparent;
+}
+.tabItemCurrent {
+    background-color: #fff;
+    border: 1px solid #ccc !important;
+    border-right: 1px solid #fff !important;
+    position: relative;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    border-radius: 5px 0 0 5px;
+}
+.tabItemContainer>li>a:hover {
+    color: #333;
+}
+.tabBodyItem {
+    width: 90%;
+    position: absolute;
+    display: none;
+}
+.tabBodyItem>p {
+    font: 23px "微软雅黑", Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+.tabBodyItem>p>a {
+    text-decoration: none;
+    color: #0F3;
+}
+.tabBodyCurrent{
+    display:block;
+}
+
+/*左侧导航样式*/
+.sidebar-nav {
+    min-height: 0;
+    box-shadow: 0 0 10px #BDBDBD;
+	border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    max-height: none;
+  /*  font-weight: bold;*/
+}
+
+
+/*弹出层效果*/
+#bg {
+	display:none; 
+	position:absolute; 
+	top:0%; 
+	left:0%; 
+	width:100%; 
+	height:100%; 
+	background-color:black; 
+	-moz-opacity:0.4; 
+	opacity:.40; 
+	filter:alpha(opacity=40);
+}
+
+/*渠道信息*/
+.form-title {
+	display: block;
+    padding: 8px 0;
+    border-bottom: 1px dashed rgba(0,0,0,.6);
+    font-size: 15px;
+    font-weight: 700;
+    color: #262626;
+    margin-bottom: 15px;
+}
+
+/*输入框后面的信息提示*/
+.form-remark {
+	font-size:12px;
+	
+}
+
+.strategy-content {
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+/*点击客户列表时选中*/
+
+/*保存提交table样式*/
+.butTab {
+	width:100%;
+	height:100%;
+	margin:0px 0;
+}
+
+.butTab td {
+	text-align:center;
+}
+
+/*客户list排序*/
+.table th[class*=sort] {
+	cursor:pointer;
+}
+
+.sortSpan {
+	font-size:12px;
+	margin-left:5px;
+}
+
+
+/*导出框样式*/
+.control-body {
+	padding:10px 10px 15px 10px;
+}
+
+.bodyTitle {
+	color:#1995dc;
+	font-weight:700;
+}
+

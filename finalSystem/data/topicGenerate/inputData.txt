@@ -1,0 +1,128 @@
+0	网格/O 员/O 巡视/O 网格/O 时/O 室/O 居民/B-PERSON 反映/O 窗户/B-PUBLIC 下/E-PUBLIC 自行车/B-GOODS 存放点/O 影响/O 两位/O 老人/B-PERSON 正常/O 休息/O 网格/O 员/O 得知/O 此事/O 及时/O 物业/O 相关/O 部门/O 联系/B-VISIT_HANDLE 希望/O 得到/O
+1	网格/O 员/O 巡查/O 时/O 发现/O 松山/O 号楼/O 单元/B-PUBLIC 门口/E-PUBLIC 破损/B-DAMAGE
+0	网格/O 员/O 走访/B-VISIT_HANDLE 新/B-ORG 广厦/E-ORG 百丽/O 小区/B-ORG 网格/O 中/O 发现/O 新/B-ORG 广厦/E-ORG 百丽/O 小区/E-ORG 居民楼/O 号楼/O 单元/O 二楼/O 一反/O 宣/O 品/O 小/B-GOODS 招贴/E-GOODS
+4	生态园/O 早餐/O 部/O 排风机/O 噪音/O 超标/O 早/O 四点/O 接近/O 五十/O 分贝/O 伴着/O 连续/O 尖/O 音/O 严重/O 忧民/O 请/O 觯/O 决/O
+1	巡查/B-VISIT_HANDLE 中发/O 现下/O 水井盖/B-PUBLIC 未/B-OCCUPY 盖/E-OCCUPY 严/E-VISIT_HANDLE
+0	网格/O 员/O 巡查/O 时/O 发现/O 清泉/B-ORG 社区/E-ORG 号楼/O 下有/O 一些/O 居民/B-PERSON 装修/B-VISIT_HANDLE 时/O 留下/O 沙子/B-GOODS 环境/O 整洁/O 带来/O 影响/O
+4	上午/O 号楼/O 单元/O 居民/B-PERSON 韩云/O 社区/B-ORG 打电话/O 反映/O 她家/O 邻居/B-PERSON 翟/O 淑芳/O 无故/O 一次/O 骂/O 一次/O 不敢/O 出门/O 要求/O 社区/B-ORG 出面/O 解决/O
+0	走访/O 网格/O 时/O 发现/O 公安分局/B-ORG 号楼/O 单元/O 地下室/B-PUBLIC 一大堆/O 垃圾/B-GOODS 堆放/B-OCCUPY 发出/O 难闻/O 气味/B-GOODS 影响/O 居民/B-PERSON 居住/O 环境/O
+0	楼外/O 堆/B-OCCUPY 有/E-OCCUPY 大量/B-GOODS 货物/B-GOODS 影响/O 环境/O 美观/O
+4	网格/O 员/O 所在/O 网格/O 沿街/O 主路/O 站岗/O 维护/O 机动车辆/B-GOODS 乱/B-OCCUPY 停放/E-OCCUPY
+4	热电/B-ORG 社区/E-ORG 装修/B-VISIT_HANDLE 收尾/O 工作/O 正在/O 进行/O 工人/O 忙碌/O
+4	网格/O 员/O 走访/B-VISIT_HANDLE 新工/O 基督教会/O
+0	网格/O 员/O 走访/O 发现/O 烽火/B-ORG 小区/E-ORG 号楼/O 单元/B-PUBLIC 门前/E-PUBLIC 废旧/B-GOODS 物品/B-GOODS 影响/O 城市形象/O
+0	网格/O 员/O 巡查/O 时/O 发现/O 天元/B-ORG 蓝城/I-ORG 小区/E-ORG 北门/O 商网/B-ORG 装修/B-VISIT_HANDLE 把/O 装修/B-GOODS 垃圾/E-GOODS 准/O 在/O 门外/O 两边/O 门外/O 作业/O 影响/O 街/O 容/O 街/O 貌/O
+4	发现/O 盲道/B-PUBLIC 断开/E-PUBLIC
+0	网格/O 员/O 下午/O 网格/O 巡察/O 时/O 发现/O 小区/B-ORG 楼/O 东侧/O 绿化带/B-PUBLIC 旁/O 堆放/B-OCCUPY 一堆/O 生活/B-GOODS 垃圾/E-GOODS 网格/O 员/O 立即/O 通知/O 物业/O 处/O 告之/O 现在/O 雨停/O 及时/O 清理/B-VISIT_HANDLE 生活/B-GOODS
+2	月/O 日/O 乐园/O 社区/B-ORG 区/O 租户/B-PERSON 张/O 玉涛/O 办理/B-VISIT_HANDLE 辽宁省/B-AD_CER 就业/E-AD_CER 失业/I-AD_CER 登记证/E-AD_CER
+0	紫园/B-ORG 小区/E-ORG 北商/O 网/O 不/O 老美/O 门前/B-PUBLIC 一堆/O 废弃/O 装修/B-GOODS 垃圾/E-GOODS
+0	松林/O 号楼/O 单元/O 发现/O 法轮功/B-AD_CER 反/I-AD_CER 宣/I-AD_CER 品/E-AD_CER
+4	巡查/O 发现/O 饭店/B-ORG 后厨/O 违反/B-OCCUPY 食品安全/O
+0	兴/O 三街/O 百特/O 北门/O 西风/O 刮到/O 扶正/O 后/O 树坑/O 周围/O 方砖/B-PUBLIC 破损/B-DAMAGE
+0	网格/O 员/O 走/O 网格/O 时/O 发现/O 公园/O 花坛/B-PUBLIC 里/O 杂草/B-GOODS 太多/O
+4	乱设/O 摊点/O 兜售/O 物品/B-GOODS
+1	网格/O 员/O 巡查/O 时/O 发现/O 天元/B-ORG 蓝城/I-ORG 小区/E-ORG 号楼/O 北/O 梯/O 故障/B-OCCUPY 已/O 停/B-OCCUPY 梯/O
+0	地方/B-PERSON 小区/I-PERSON 管理/I-PERSON 网格/I-PERSON 员/E-PERSON 走访/O 过程/O 中/O 居民/B-PERSON 反应/O 车库门/B-PUBLIC 天天/O 被/O 自行车/B-GOODS 挡住/B-OCCUPY 门开/O 不开/O 心里/O 着急/O
+1	原/O 湾仔/O 粥/O 东侧/O 道/B-PUBLIC 板/E-PUBLIC 破损/B-DAMAGE
+4	原/O 职业/O 技术/O 学院/O 财政/O 路/B-DAMAGE 围档/O 简陋/O 遇到/O 风雨/O 倒/B-DAMAGE 一片/O 这条/O 路/B-DAMAGE 市/O 完全中学/O 上学/O 必经之路/O 学生/O 行人/O 造成/B-DAMAGE 安全隐患/O 维/O 补/O 坏/B-DAMAGE 造成/B-DAMAGE 恶性循环/O 强烈要求/O
+2	网格/O 区内/O 住户/B-ORG 人口/O 李/O 春/O 来/O 家/O 再/O 一次/O 进水/B-DAMAGE
+4	网格/O 员/O 发现/O 居民/B-PERSON 小区/B-ORG 悬挂/B-OCCUPY 宗教/O 彩旗/O
+0	居民/B-PERSON 树上/O 晾/B-OCCUPY 辣椒/B-GOODS
+0	建筑/B-GOODS 垃圾/E-GOODS
+4	乱/B-OCCUPY 贴/E-OCCUPY 告示/O
+4	鹤乡/B-ORG 社区/E-ORG 第三/O 网格/O 区/O 号楼/O 东侧/O 小商贩/B-ORG 占道/B-OCCUPY 经营/E-OCCUPY 网格/O 员/O 温/O 艳/O 华/O 电话/O
+0	巡视/O 网格/O 时/O 看见/O 一台/O 车辆/B-GOODS 停放在/B-OCCUPY 小区/B-ORG 南门/O 消防通道/B-PUBLIC 前/O 网格/O 员/O 走访/B-VISIT_HANDLE 询问/B-VISIT_HANDLE 得知/O 小区/B-ORG 住户/B-ORG 车辆/B-GOODS 网格/O 员/O 找到/O 车主/O 沟通/O 后/O 车主/O 同意/O 立即/O
+4	居民/B-PERSON 董/O 叔/O 新换/O 一步/O 智能手机/O 社区/B-ORG 找/O 网格/O 员/O
+0	网格/O 员/O 巡查/B-VISIT_HANDLE 中发/O 现汇/O 美商/O 网/O 主街/O 主路/O 沿街/O 摆放/B-OCCUPY 大量/B-GOODS 纸壳/B-GOODS 影响/O 环境卫生/O 市容/O 市貌/O 网格/O 员/O 找到/O 商网/B-ORG 老板/O 劝说/O 把/O 摆放/B-OCCUPY 纸壳/B-GOODS 挪/O 放到/B-OCCUPY
+1	网格/O 员/O 走访/O 时/O 发现/O 三区/O 一栋/O 楼后/O 路/B-DAMAGE 中间/O 有个/O 下/B-PUBLIC 水井盖/E-PUBLIC 被车/O 压坏/B-DAMAGE 网格/O 员/O 立即/O 物业/O 联系/B-VISIT_HANDLE 物业/O 立即/O 派人来/O 维修/B-VISIT_HANDLE
+4	信息员/O 反映/O 新年/O 新气象/O 迎接/O 新年/O 到来/O 小区/B-ORG 应该/O 装点/O 彩灯/O 增加/B-VISIT_HANDLE 点/O 新年/O 气氛/O
+0	发愣/O 功/O 反/B-AD_CER 宣/I-AD_CER 品/E-AD_CER
+0	楼/O 北/O 有/O 杂草/B-GOODS
+1	号楼/O 东有/O 路面/B-PUBLIC 破损/B-DAMAGE
+0	网格/O 员/O 反应/O 社区/B-ORG 社区/E-ORG 派/O 联防员/O 杂物/B-GOODS 清除/B-VISIT_HANDLE
+0	垃圾/B-GOODS 清理/B-VISIT_HANDLE
+0	单元/O 门上/O 小/B-AD_CER 广告/E-AD_CER
+1	网格/O 员/O 走访/O 发现/O 臻/B-ORG 园/I-ORG 小区/E-ORG 西侧/O 农业银行/O 南侧/O 路口/B-PUBLIC 水井/E-PUBLIC 堵塞/B-OCCUPY
+0	清理/B-VISIT_HANDLE 树叶/B-GOODS
+4	区委/O 组织部/O 领导/B-PERSON 街道/O 领导/B-PERSON 社区/B-ORG 检查指导/E-PERSON 党建工作/O
+0	创城/O 期间/O 社区/B-PERSON 网格/O 员/O 网格/O 情况/O 进行/O 排查/B-VISIT_HANDLE 发现/O 钻/O 一/O 办公/O 楼道/B-PUBLIC 东/O 有违/B-OCCUPY 停/E-OCCUPY 现象/O
+0	楼/O 东墙/O 堆放/B-OCCUPY 杂物/B-GOODS
+0	网格/O 员/O 走访/O 发现/O 烽火/B-ORG 小区/E-ORG 证券/O 家属楼/O 前/O 人员/B-PERSON 行道/O 上/B-OCCUPY 有/E-OCCUPY 一辆/O 三轮车/B-GOODS 使/O 原本/O 不/O 宽/O 人行道/B-PUBLIC 行走/O 困难/O 属/O 地方/B-ORG 小区/B-ORG 管理/O
+0	大商/B-ORG 城市/I-ORG 广场/E-ORG A座/O 室/O 左侧/O 放置/B-OCCUPY 私人物品/B-GOODS
+0	网格/O 员/O 日常生活/O 巡查/O 时/O 发现/O 号楼/O 北侧/O 小广/O 场上/O 碎砖/B-GOODS 头/E-GOODS 影响/O 小区/B-ORG 环境/O
+0	生活/B-ORG 小区/E-ORG 号楼/O 单元/O 堆放/B-OCCUPY 物/E-GOODS
+1	条幅/B-PUBLIC 破损/B-DAMAGE 悬挂/B-OCCUPY 新/O 条幅/B-PUBLIC
+0	小区/B-ORG 绿化/O
+1	商网/B-ORG 美孚/O 鑫/O 运通/O 汽车维修/O 检测中心/O 门前/B-PUBLIC 污水/B-PUBLIC 井边/O 破损/B-DAMAGE
+4	走访/O 中/O 发现/O 号楼/O 赵/O 大姨/B-PERSON 对门/O 发生/B-VISIT_HANDLE 争吵/B-VISIT_HANDLE 动手/O 平时/O 两人/O 好/O 呀/O 今天/O 不知/O 道上/O
+0	网格/O 员/O 走访/O 中/O 发现/O 号楼/O 单元/O 窗户上/O 挂/B-OCCUPY 一些/O 腊肠/B-GOODS 腊肉/E-GOODS 赶忙/O 上楼/O 居民/B-PERSON 沟通/O 掉下来/B-OCCUPY
+0	第四/B-PERSON 网格/I-PERSON 员/E-PERSON 走访/O 排查/O 时/O 发现/O 振/B-ORG 北/I-ORG 小区/E-ORG 号楼/O 前有/O 居民/B-PERSON 放置/B-OCCUPY 生活/B-GOODS 垃圾/E-GOODS 已/O 物业/O 联系/B-VISIT_HANDLE 等待/O 处理/B-OCCUPY 毕/O 荣华/O
+4	网格/O 员/O 认真/O 做好/O 走访/B-VISIT_HANDLE 工作/O
+1	网格/O 员/O 走访/O 中/O 发现/O 影响/O 创城/O 进度/O 不/O 文明/O 行为/O 树木/B-PUBLIC 造成/B-DAMAGE 损坏/B-DAMAGE
+0	人行/O 道旁/O 电线杆/B-PUBLIC 子上/O 发现/O 张/O 发愣/O 功/O 小/B-AD_CER 张贴/E-AD_CER
+0	第六/O 网格/O 信息员/E-PERSON 巡查/O 中/O 发现/O 新宇/B-ORG 宾馆/E-ORG 北有/O 一堆/O 沙土/B-GOODS 无人/B-OCCUPY 清理/E-OCCUPY
+0	网格/O 员/O 走访/O 发现/O 团结/B-ORG 小区/E-ORG 号楼/O 北侧/O 昨天/O 下雨/O 道路/B-PUBLIC 边有/O 大量/B-GOODS 积水/B-OCCUPY 居民/B-PERSON 出行/O 带来/O 不便/O
+4	网格/O 员/O 上午/O 走访/B-VISIT_HANDLE 时/O 看到/O 号楼/O 居民/B-PERSON 把/O 毯子/O 晾/B-OCCUPY 楼门/O 前/O 地上/O 一个角/O 搭/O 物业/O 花盆/B-GOODS 上/O 极/O 不/O 美观/O 影响/O 社区/B-ORG 环境/O 路过/O 居民/B-PERSON 带来/O
+4	号楼/O 单元/B-PUBLIC 门前/E-PUBLIC
+0	网格/O 员/O 走访/B-VISIT_HANDLE 时有/O 居民/B-PERSON 反映/O 国学/O 幼儿园/B-ORG 楼顶/B-PUBLIC 违章建筑/B-GOODS 一面/O 墙/O 楼下/B-PERSON 居民/B-PERSON 不敢/O 楼下/O 逗留/O 风天/O 更是/O 危险/O 网格/O 员/O 及时/O 网格/B-PERSON 长/E-PERSON 进行/O 汇报/O 一同/O
+0	先锋/O 社区/B-ORG 第六/O 网格/O 员/O 裴/O 立华/O 日常/O 巡视/O 时/O 发现/O 先锋/O 小区/B-ORG 南门/O 药店/B-ORG 前方/O 一些/O 建筑/B-GOODS 垃圾/E-GOODS 网格/O 员/O 随即/O 上报/O 社区/B-PERSON 主任/E-PERSON 陈光明/O 社区/B-PERSON 主任/E-PERSON
+0	东/O 排/O 总/O 路边/B-PUBLIC 稻/O 草/B-GOODS 堆/B-OCCUPY 影响/O 环境/O
+4	石化/B-ORG 技校/E-ORG 东楼/O 宝金/O 诊所/O 进行/O 实名/B-VISIT_HANDLE 登记/E-VISIT_HANDLE
+0	网格/O 员/O 走访/O 中/O 发现/O 作业/B-ORG 北区/E-ORG 单元/B-PUBLIC 门前/E-PUBLIC 停/B-OCCUPY 有/E-OCCUPY 电动/O 三轮车/B-GOODS
+4	占道/B-OCCUPY 经营/E-OCCUPY 影响/O 市容/O
+1	马路/B-PUBLIC 牙/O 破损/B-DAMAGE
+0	巡查/O 中/O 发现/O 现代/O 城/O 辖区/O 内有/B-OCCUPY 一处/O 建筑/B-GOODS 垃圾/E-GOODS 堆放/B-OCCUPY 影响/O 居民/B-PERSON 出行/O
+4	临近/O 中元节/O 马路/B-PUBLIC 两旁/O 烧纸/O 人/O 渐渐/O 倡导/O 文明/O 祭祀/O 网格/B-PERSON 长/E-PERSON 网格/O 员/O 一起/O 行动/O 劝说/O 祭祀/O 人/O 行动/O 文明/O
+0	巡查/O 时/O 发现/O 地税/O 小区/B-ORG 南/O 门外/O 大墙/O 东侧/O 发现/O 种有/O 两/O 陇/O 豆子/B-GOODS
+0	垃圾箱/B-PUBLIC 旁边/O 垃圾/B-GOODS 存放/B-OCCUPY
+1	网格/O 员/O 日常/O 巡查/O 时/O 商网/B-ORG 牌匾/B-GOODS 更换/B-VISIT_HANDLE 问题/B-DAMAGE 施工人员/B-PERSON 发生争执/O 网格/O 员/O 劝解/O
+0	天丽/B-ORG 家园/I-ORG 社区/B-ORG 二期/O 路边/B-PUBLIC 一个/O 丢弃/B-OCCUPY 微波炉/O 影响/O 市容/O
+4	网格/O 员/O 走/O 网格/O 时/O 发现/O 物业/B-PERSON 工作人员/E-PERSON 修理/B-VISIT_HANDLE 暖气/B-PUBLIC 管道/E-PUBLIC
+0	网格/O 员/O 走访/B-VISIT_HANDLE 排查/B-VISIT_HANDLE 中/O 发现/O 位于/O 作业/O 东区/O 号楼/O 东侧/O 围墙/O 旁边/O 堆放/B-OCCUPY 几个/O 破旧/B-GOODS 木门/E-GOODS 影响/O 小区/B-ORG 环境/O
+0	发现/O 发轮/O 功/O 标语/O
+4	电路/O 维修/B-VISIT_HANDLE
+0	大门口/B-PUBLIC 积满/B-OCCUPY 雨水/B-GOODS 居民/B-PERSON 出行/O 不/O 方便/O
+0	单元/O 东侧/O 垃圾/B-GOODS <unk>/O 旁边/O 许多/O 垃圾/B-GOODS
+1	第四/O 网格/O 网格/O 员/O 下/O 网格/O 公安分局/B-ORG 号楼/O 单元/O 室/O 帮扶/B-VISIT_HANDLE 残疾人/B-ORG 高尚/O 敏/B-PERSON 网格/B-PERSON 员/I-PERSON 贾/I-PERSON 莹/E-PERSON 电话/O
+2	保证/O 小区/B-ORG 居民/B-PERSON 正常/O 领取/B-VISIT_HANDLE 养老金/O 社区/B-PERSON 工作者/E-PERSON 电话/O 联系/B-VISIT_HANDLE 居民/B-PERSON 前来/O 社区/B-ORG 办理/B-VISIT_HANDLE 养老保险/B-AD_CER 认证/E-AD_CER 手续/O
+0	发现/O 反/B-AD_CER 宣/I-AD_CER 品/I-AD_CER 小/I-AD_CER 粘贴/E-AD_CER 网格/O 员/O 已/O 清理/B-VISIT_HANDLE
+1	景兴/B-ORG 社区/E-ORG 第一/B-PERSON 网格/I-PERSON 员/E-PERSON 走访/B-VISIT_HANDLE 景兴/B-ORG 小区/E-ORG 号楼/O 后面/O 时/O 发现/O 一处/O 污水/B-PUBLIC 井/E-PUBLIC 周围/O 砖/B-PUBLIC 地面/B-PUBLIC 坏/B-DAMAGE 损/E-DAMAGE
+4	物业/B-PERSON 人员/E-PERSON 正在/O 美化/O 修理/B-VISIT_HANDLE 树木/B-PUBLIC
+0	居民/B-PERSON 乱/B-OCCUPY 扔/E-OCCUPY 垃圾/B-GOODS 扔到/B-OCCUPY 垃圾/B-GOODS 房/E-GOODS 外边/O 找到/O 附近/O 物业/O 打扫卫生/O 人员/B-PERSON 把/O 抬进/O 垃圾/B-GOODS 房/E-GOODS
+0	信息员/O 反映/O 新/B-ORG 一站/E-ORG 吉星/O 百货/O 超市/O 门前/B-PUBLIC 绿化带/B-PUBLIC 上/O 停放/B-OCCUPY 车辆/B-GOODS 影响/O 人文/O 形象/O
+0	苏宁/O 广场/O 中心/O 街/O 法轮功/B-AD_CER 宣传品/E-AD_CER
+0	九小/B-ORG 场所/E-ORG 盘锦市/O 兴隆台区/O 胜利/O 瑞/O 合/O 祥/O 一品/O 排骨/O 店/O 小/O 饭店/B-ORG
+0	北商/O 网/O 三区/O 十一/O 号楼/O 商网/B-ORG 前/O 一堆/O 废弃/B-GOODS 沙石/E-GOODS 垃圾/B-GOODS
+4	一辆/O 小推车/B-ORG 占道/B-OCCUPY 经营/E-OCCUPY
+1	楼/O 北下/O 水井盖/B-PUBLIC 破损/B-DAMAGE 严重/O
+1	路面/B-PUBLIC 不平/B-OCCUPY
+4	号楼/O 小区/B-ORG 烧烤店/O 门前/B-PUBLIC 乱/B-OCCUPY 摆放/B-OCCUPY 私自/E-OCCUPY 占用/B-OCCUPY 公共/O 区域/O
+0	网格/O 员/O 巡查/O 发现/O 杂草/B-GOODS 一堆/O
+0	号楼/O 单元/O 草坪/B-PUBLIC 暴露/B-GOODS 垃圾/E-GOODS
+1	热电/B-ORG 小区/E-ORG 号楼/O 后/O 路面/B-PUBLIC 破损/B-DAMAGE 物业/O 维修/B-VISIT_HANDLE 中/O
+1	走访/O 网格/O 时/O 得知/O 公安分局/B-ORG 号楼/O 院内/B-PUBLIC 界沟/O 饺子馆/O 后/O 污水/B-PUBLIC 井/E-PUBLIC 堵塞/B-OCCUPY 影响/O 下水/B-PUBLIC
+0	网格/O 员/O 发现/O 号楼/O 单元/O 住户/B-ORG 把/O 家中/O 废品/B-GOODS 放在/B-OCCUPY 外面/B-PUBLIC 进行/O 晾晒/B-OCCUPY 不美观/O 不/O 安全/O
+4	网格/O 员/O 小区/B-ORG 巡查/O 中/O 发现/O 老大爷/O 走路/O 艰难/O 网格/O 员/O 上前/O 搀扶/O 送回/O 家中/O
+0	非法/B-AD_CER 小/B-AD_CER 张贴/E-AD_CER
+4	农场/O 小楼/O 排/O 西侧/O 老七/O 河蟹/O 大米/O 批发/O 门前/B-PUBLIC 乱堆/B-OCCUPY 乱放/E-OCCUPY
+0	车库门/B-PUBLIC 前有/O 三块/O 石头/B-GOODS
+1	松阳/O 号楼/O 北侧/O 路面/B-PUBLIC 地砖/B-PUBLIC 破损/B-DAMAGE
+1	楼前/B-PUBLIC 井盖/B-PUBLIC 松动/B-DAMAGE 夜间/O 走路/O 危险/O
+4	网格/O 员/O 巡查/O 中/O 发现/O 基地/O 平房区/O 居民/B-PERSON 占用/B-OCCUPY 人行道/B-PUBLIC 违规/B-OCCUPY 搭建/E-OCCUPY 旱厕/B-GOODS
+2	明珠/B-ORG 家园/E-ORG D座/O 超市/O 老板/O 儿子/O 咨询/B-VISIT_HANDLE 城市居民/E-VISIT_HANDLE 养老保险/B-AD_CER
+0	万达/O 西南角/O 建筑物/B-GOODS 沙袋/B-GOODS 子/E-GOODS
+4	盘锦市/O 创建/O 全国/O 文明城市/O 网格/O 员/O 整天/O 管辖区/O 巡逻/O 发现/O 问题/B-DAMAGE 及时/O 上报/O 一区/O 发现/O 两处/O 井盖/B-PUBLIC 缺失/B-DAMAGE 上报/O 社区/B-ORG 街道/O 领导/B-PERSON
+4	物业/O 对外/O 阳台/B-PUBLIC 进行/O 维修/B-VISIT_HANDLE 部分/O 居民/B-PERSON 不/O 同意/O
+0	未知/O 国度/O 院内/B-PUBLIC 建筑/B-GOODS 垃圾/E-GOODS
+0	网格/O 员/O 走访/O 中/O 发现/O 裕祥/B-ORG 融城/E-ORG 号楼/O 单元/O 楼道/B-PUBLIC 堆满/B-OCCUPY 纸盒/B-GOODS 箱/O 杂物/B-GOODS 存在/B-OCCUPY 严重/O 安全隐患/O 妨碍/O 居民/B-PERSON 出行/O
+0	网格/O 员/O 走访/O 发现/O 水游城/B-ORG 小区/E-ORG 单元/O 对面/O 马路边/O 一颗/O 死树/B-GOODS
+0	有乱/O 扔/B-OCCUPY 成堆/O 杂志/O 书/O
+4	已/O 清理/B-VISIT_HANDLE
+0	繁荣/O 社区/B-ORG 鹤/O 舞/O 路/O 号楼/O 西侧/O 僵尸/B-GOODS 车/E-GOODS 一个/O
+0	网格/O 员/O 巡视/O 时/O 看见/O 号楼/O 西山/O 处有/O 搅拌机/O 零件/O 放在/B-OCCUPY 路旁/O 存在/O 安全隐患/O 已/O 联系/B-VISIT_HANDLE 物业/O 挪走/O
+4	移动/O 公司/O 东侧/O 人行/B-PUBLIC 路上/E-PUBLIC 违章/B-OCCUPY 停车/E-OCCUPY 一单/O
+0	广厦/B-ORG 新城/E-ORG 北门/O 商网/B-ORG 蟹/O 道门/O 前为/O 卖货/O 方便/O 摆放/B-OCCUPY 大量/O 装/O 螃蟹/O 泡沫/O 箱子/O
+4	网格/B-PERSON 长/E-PERSON 巡查/B-VISIT_HANDLE 中/O 接到/O 居民/B-PERSON 投诉/B-VISIT_HANDLE 电话/O 投诉/B-VISIT_HANDLE 裕祥/O 融/O 城北/O 门/O 商/O 网/O 门前/B-PUBLIC 养狗/B-OCCUPY 扰民/E-OCCUPY 网格/B-PERSON 长/E-PERSON 找到/O 商网/B-ORG 业主/B-PERSON 反应/O 情况/O 商网/B-ORG 业主/B-PERSON 说/O
+1	老干部局/O 北侧/O 两处/O 雨水/B-PUBLIC 篦子/E-PUBLIC 坏/B-DAMAGE
+4	陈丽/O 网格/B-PERSON 重点/B-PERSON 人/E-PERSON 十六大/O 期间/O 了解/B-VISIT_HANDLE 重点/B-PERSON 人/E-PERSON 动态/B-VISIT_HANDLE 情况/E-VISIT_HANDLE
+4	南区/O 四号楼/O 南侧/O 发现/O 流动/B-ORG 商贩/E-ORG 占道/B-OCCUPY 经营/E-OCCUPY 兜售/O 商品/O 被/O 工作人员/B-PERSON 劝说/O 走/O

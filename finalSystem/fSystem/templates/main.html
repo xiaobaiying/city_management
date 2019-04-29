@@ -1,0 +1,330 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Domain Oriented Topical Statement Extraction of Chinese text</title>
+     <!-- 引入bootstrap-->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+	<!-- 引入bootstrap时间样式-->
+	<link rel="stylesheet" href="{% static 'css/bootstrap-datepicker.min.css' %}"/>
+    <!-- 自定义css-->
+    <link rel="stylesheet" href="{% static 'css/indexBase.css' %}"/>
+ <!--引入jQuery-->
+    <script type="text/javascript" src="{% static  'js/jquery-2.0.0.min.js' %}"></script>
+    <script type="text/javascript" src= "{% static 'js/preProcess.js' %}"></script>
+    <script type="text/javascript" src="{% static 'django_ajax/js/jquery.ajax.min.js' %}"></script>
+    <script type="text/javascript" src= "{% static 'js/problem403.js'%}"></script>
+    <script type="text/javascript" src= "{% static 'js/LDA.js'%}"></script>
+    <script type="text/javascript" src= "{% static 'js/RemoteSupervision.js'%}"></script>
+    <script type="text/javascript" src= "{% static 'js/neuralNetwork.js'%}"></script>
+
+</head>
+<body>
+<div>
+    <div class="tabItemContainer">
+        <li><a class="tabItemCurrent">Word Segmentation</a></li>
+{#        <li><a>LDA&图谱创建</a></li>#}
+        <li><a>Distant Supervision</a></li>
+        <li><a>Name Entity Recognition</a></li>
+        <li><a>Sentence Classification</a></li>
+        <li><a>Topic Generation</a></li>
+    </div>
+    <div class="tabBodyContainer">
+        <div id="preProcess" class="tabBodyItem tabBodyCurrent">
+            <table class="table-css">
+           <tbody>
+           <tr>
+               <td colspan="2" class="tittle-font">
+                   分词模块
+               </td>
+           </tr>
+           <tr>
+               <td>
+                   <div class='btn btn-info btn-sm btn-file '>
+                        <i class='glyphicon glyphicon-folder-open'></i>.<input id ="fileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                    </div>
+               </td>
+               <td>
+                   <input class='isDocumentSelected' id ="fileName" type='hidden' name='IsDocumentSelected' value='false' />
+                    <span class='fileDisplay' documentId='0'>文件名</span>
+           </tr>
+           <tr>
+               <td colspan="2">
+                      <button id="btnCutwords" class='btn btn-info' style="align:right;" onclick="analyse()">开始分词</button>
+                      <span id = "cutWatting" class="wait-span">正在分词...</span>
+               </td>
+           </tr>
+           </tbody>
+       </table>
+        </div>
+
+        <div id='RemoteSupervision' class="tabBodyItem">
+           <table class="table-css">
+               <tbody>
+               <tr>
+                     <td class="tittle-font" colspan="2">语义标注</td>
+                </tr>
+               <tr>
+                   <td>
+                       语义标签
+                   </td>
+                   <td>
+                       OBJECT(物品类)</br></br>
+                       AD_CER(广告，通知类)</br></br>
+                       ORG（组织机构类）</br></br>
+                       PERSON(人物居民类)</br></br>
+                       PUBLIC（公物地点类）</br></br>
+                       DAMAGE（损坏）</br></br>
+                       OCCUPY（占据）</br></br>
+                       VISIT_HANDLE（处理）</br></br>
+                       O（无标签）</br></br>
+                       pad(补位符号)</br></br>
+                   </td>
+               </tr>
+                <tr>
+                     <td class="tittle-font" colspan="2">远程监督</td>
+                </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择远程监督模板文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="rsmodelfileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                          <input class='isDocumentSelected'  type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='fileDisplay' id ="rsmodelfileName"documentId='0'>文件名</span>
+                     </td>
+                </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择远程监督标注文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="rstagfileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                    <input class='isDocumentSelected'  type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='fileDisplay' id ="tagfileName"documentId='0'>文件名</span>
+                     </td>
+                </tr>
+               <tr>
+                    <td>
+                        请输入输出文件名
+                    </td>
+                    <td>
+                       <input id="rstaggedfileName" type="text" name="输出文件名" value="">
+                    </td>
+               </tr>
+               <tr>
+               <td colspan="2">
+                      <button id="btnRemoteSup" class='btn btn-info' style="align:right;" onclick="RemoteSupervision()">自动标注</button>
+
+               </td>
+           </tr>
+           <tr>
+                <td id = "rsResult"  class ="ordinary-font" colspan="2" value=0>正在进行自动标注，请稍后...</td>
+            </tr>
+               </tbody>
+           </table>
+        </div>
+         <div id='SequenceTagging' class="tabBodyItem">
+           <table class="table-css">
+               <tbody>
+               <tr>
+                   <td colspan="2" class="tittle-font">参数设置</td>
+               </tr>
+               <tr>
+                   <td>类别数</td>
+                   <td>28</td>
+               </tr>
+                <tr>
+                   <td>keep_prob</td>
+                   <td><input type="number" id="keep_prob_st" min="0.1" max="1.0" /></td>
+               </tr>
+               <tr>
+                   <td>hidden_nerual_size</td>
+                   <td><input type="number" id="hidden_nerual_size_st" min="1" max="1024" /></td>
+               </tr>
+               <tr>
+                   <td>learning_rate</td>
+                   <td><input type="number" id="learning_rate_st" min="0.00001" max="0.9999" /></td>
+               </tr>
+                <tr>
+                   <td>num_epoch</td>
+                   <td><input type="number" id="num_epoch_st" min="1" max="12" value="7"/></td>
+               </tr>
+               <tr>
+                   <td colspan="2" class="tittle-font">模型训练</td>
+               </tr>
+               <tr>
+                   <td>生成model名称</td>
+                   <td><input type="text" id="modelName_st" value="model_st.ckpt" /></td>
+               </tr>
+               <tr>
+                    <td colspan="2">
+                      <button id="btnTrain_st" class='btn btn-info' style="align:right;" onclick="train_st()">开始训练</button>
+               </td>
+               </tr>
+               <tr id ="trTrainst_Result" >
+                     <td id = "train_st_Result"  class ="ordinary-font" colspan="2" value=0>正在进行模型训练，请稍后……</td>
+                </tr>
+               <tr>
+                   <td colspan="2" class="tittle-font">模型测试</td>
+               </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择Test文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="test_st_fileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                          <input class='isDocumentSelected' id ="test_st_fileName" type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='fileDisplay' documentId='0'>文件名</span>
+                </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择model文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="test_model_st_fileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                          <input class='isDocumentSelected' id ="test_model_st_fileName" type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='fileDisplay' documentId='0'>文件名</span>
+                </tr>
+               <tr>
+                    <td>请输入输出文件名</td>
+                    <td>
+                       <input id="test_st_result_fileName" type="text" name="输出文件名" value="test_st_result.txt">
+                    </td>
+               </tr>
+               <tr>
+               <td colspan="2">
+                      <button id="btnTest_st" class='btn btn-info' style="align:right;" onclick="test_st()">测试</button>
+                      <span id = "test_st_Watting" class="wait-span">正在对测试文件进行标注，请稍后...</span>
+               </td>
+           </tr>
+               </tbody>
+           </table>
+        </div>
+        <div id='TopicClassification' class="tabBodyItem">
+           <table class="table-css">
+               <tbody>
+                <tr>
+                     <td class="tittle-font" colspan="2">主题句式分类</td>
+                </tr>
+               <tr>
+                   <td colspan="2" class="tittle-font">参数设置</td>
+               </tr>
+               <tr>
+                   <td>类别数</td>
+                   <td>6</td>
+               </tr>
+                <tr>
+                   <td>keep_prob</td>
+                   <td><input type="number" id="keep_prob_tc" min="0.1" max="1.0" /></td>
+               </tr>
+               <tr>
+                   <td>hidden_nerual_size</td>
+                   <td><input type="number" id="hidden_nerual_size_tc" min="1" max="1024" /></td>
+               </tr>
+               <tr>
+                   <td>learning_rate</td>
+                   <td><input type="number" id="learning_rate_tc" min="0.00001" max="0.9999" /></td>
+               </tr>
+                <tr>
+                   <td>num_epoch</td>
+                   <td><input type="number" id="num_epoch_tc" min="1" max="12" value="7"/></td>
+               </tr>
+               <tr>
+                   <td colspan="2" class="tittle-font">模型训练</td>
+               </tr>
+               <tr>
+                   <td>生成model名称</td>
+                   <td><input type="text" id="modelName_tc" value="model_tc.ckpt" /></td>
+               </tr>
+               <tr>
+                    <td colspan="2">
+                      <button id="btnTrain_tc" class='btn btn-info' style="align:right;" onclick="train_tc()">开始训练</button>
+               </td>
+               </tr>
+               <tr id ="trTraintc_Result" >
+                     <td id = "train_tc_Result"  class ="ordinary-font" colspan="2" value=0>正在进行模型训练，请稍后……</td>
+                </tr>
+               <tr>
+                   <td colspan="2" class="tittle-font">模型测试</td>
+               </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择Test文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="test_tc_fileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                          <input class='isDocumentSelected' id ="test_tc_fileName" type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='test_tc_fileDisplay' documentId='0'>文件名</span>
+                </tr>
+               <tr>
+                    <td class="tittle-font" colspan="2">请选择model文件</td>
+                </tr>
+                <tr>
+                     <td>
+                          <div class='btn btn-info btn-sm btn-file '>
+                                <i class='glyphicon glyphicon-folder-open'></i>选择 …<input id ="test_model_tc_fileId"type='file' name='Document' multiple='true' onchange='getFileName(this)' />
+                           </div>
+                     </td>
+                     <td>
+                          <input class='isDocumentSelected' id ="test_model_tc_fileName" type='hidden' name='IsDocumentSelected' value='false' />
+                          <span class='test_model_tc_fileDisplay' documentId='0'>文件名</span>
+                </tr>
+               <tr>
+                    <td>请输入输出文件名</td>
+                    <td>
+                       <input id="test_tc_result_fileName" type="text" name="输出文件名" value="test_tc_result.txt">
+                    </td>
+               </tr>
+               <tr>
+               <td colspan="2">
+                      <button id="btnTest_tc" class='btn btn-info' style="align:right;" onclick="test_tc()">测试</button>
+                      <span id = "test_tc_Watting" class="wait-span">正在对测试文件进行标注，请稍后...</span>
+               </td>
+           </tr>
+               </tbody>
+           </table>
+        </div>
+        <div id='TopicGeneration' class="tabBodyItem">
+           <table class="table-css">
+               <tbody>
+                <tr>
+                     <td class="tittle-font" colspan="2">主题叙述生成</td>
+                </tr>
+                <tr>
+               <td colspan="2">
+                      <button id="btnGenerate" class='btn btn-info' style="align:right;" onclick="getTopics()">生成主题</button>
+               </td>
+           </tr>
+                <tr id="topicsWait">
+                    <td colspan="3" style="text-align: center">正在生成主题，请稍后……</td>
+                </tr>
+
+               </tbody>
+           </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
