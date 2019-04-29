@@ -1,5 +1,7 @@
 ## Text Analysis of Cases Description in Urban Management Field Based on Knowledge Atlas
 
+### Usage
+
 python manage.py migrate
 
 python manage.py runserver
