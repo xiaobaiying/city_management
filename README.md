@@ -1,4 +1,4 @@
-## Text Analysis of Cases Description in Urban Management Field Based on Knowledge Atlas
+## Text Analysis of Cases Description in Urban Management Field Based on Knowledge Atlas [link] (https://dl.acm.org/citation.cfm?id=3278062)
 
 ### Usage
 
